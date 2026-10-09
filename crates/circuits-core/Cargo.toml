@@ -10,11 +10,15 @@ workspace = true
 name = "mpz_circuits_core"
 
 [features]
+poseidon2-koalabear = ["dep:p3-field", "dep:p3-koala-bear", "dep:p3-poseidon2"]
 default = ["parse", "serde"]
 parse = ["dep:regex"]
 serde = ["dep:serde", "dep:serde_arrays", "dep:bincode"]
 
 [dependencies]
+p3-field = { workspace = true, optional = true }
+p3-koala-bear = { workspace = true, optional = true }
+p3-poseidon2 = { workspace = true, optional = true }
 bincode = { workspace = true, optional = true }
 itybity = { workspace = true }
 once_cell = { workspace = true }
@@ -25,5 +29,6 @@ serde_arrays = { workspace = true, optional = true }
 thiserror = { workspace = true }
 
 [dev-dependencies]
+p3-symmetric = { workspace = true }
 aes = { workspace = true }
 sha2 = { workspace = true }
