@@ -10,6 +10,7 @@ workspace = true
 name = "mpz_circuits"
 
 [features]
+poseidon2-koalabear = ["mpz-circuits-core/poseidon2-koalabear"]
 default = []
 aes = ["mpz-circuits-data/aes"]
 sha2 = ["mpz-circuits-data/sha2"]

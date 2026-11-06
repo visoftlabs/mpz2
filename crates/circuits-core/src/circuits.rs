@@ -1,6 +1,8 @@
 //! Circuits for MPC.
 
 pub mod blake3;
+#[cfg(feature = "poseidon2-koalabear")]
+pub mod poseidon2_koalabear;
 
 use crate::{Circuit, CircuitBuilder};
 

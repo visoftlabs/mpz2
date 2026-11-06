@@ -4,3 +4,5 @@ pub mod blake3;
 pub mod keccak256;
 #[cfg(feature = "sha256")]
 pub mod sha256;
+#[cfg(feature = "poseidon2-koalabear")]
+pub mod poseidon2_koalabear;
